@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>残り人生カウンター</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>残り人生カウンター</h1>
+      <form>
+        <label for="birthdate">生年月日:</label>
+        <input type="date" id="birthdate" name="birthdate" /><br />
+        <label for="age">生きたい年齢:</label>
+        <input type="number" id="age" name="age" /><br />
+        <input type="button" value="送信" onclick="calculateTimeRemaining()" />
+      </form>
+      <div id="result"></div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
